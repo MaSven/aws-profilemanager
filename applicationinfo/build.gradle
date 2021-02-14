@@ -1,0 +1,6 @@
+plugins {
+    id 'aws-profilemanager.base'
+}
+
+
+

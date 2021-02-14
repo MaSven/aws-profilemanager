@@ -1,0 +1,19 @@
+plugins {
+    id 'groovy-gradle-plugin'
+}
+
+group 'space.smarquardt'
+version '1.0-SNAPSHOT'
+
+
+
+
+
+repositories {
+    gradlePluginPortal() // so that external plugins can be resolved in dependencies section
+}
+dependencies {
+    implementation 'gradle.plugin.org.assertj:assertj-generator-gradle-plugin:0.0.6b'
+    implementation 'org.javamodularity:moduleplugin:1.7.0'
+    implementation 'com.diffplug.spotless:spotless-plugin-gradle:5.10.1'
+}

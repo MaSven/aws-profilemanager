@@ -1,0 +1,37 @@
+plugins{
+    id 'java'
+    id 'aws-profilemanager.module'
+    id 'aws-profilemanager.formatting'
+    id 'org.assertj.generator'
+}
+
+group 'space.smarquardt'
+
+repositories {
+    mavenCentral()
+}
+
+assertJ{
+
+}
+
+sourceSets{
+    main{
+        assertJ{
+
+        }
+    }
+    test{
+        java.srcDirs += 'build/generated-src/test/java'
+    }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    testImplementation("org.assertj:assertj-core:3.18.1")
+}
+
+test {
+    useJUnitPlatform()
+}

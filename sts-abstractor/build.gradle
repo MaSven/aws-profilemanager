@@ -1,0 +1,15 @@
+plugins {
+    id 'aws-profilemanager.base'
+}
+
+
+
+dependencies {
+    implementation(platform('software.amazon.awssdk:bom:2.15.81'))
+    implementation 'software.amazon.awssdk:sts'
+    implementation(project(':applicationinfo'))
+
+}
+
+
+

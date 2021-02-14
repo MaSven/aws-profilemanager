@@ -1,0 +1,4 @@
+rootProject.name = 'aws-profilemanager'
+include 'sts-abstractor'
+include 'applicationinfo'
+
